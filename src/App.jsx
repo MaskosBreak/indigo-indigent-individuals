@@ -6,7 +6,6 @@ import img3 from '/03.gif'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -15,7 +14,7 @@ function App() {
             <i class="fa-solid fa-binoculars"></i>
             <a className={s.navWords}>Ultrakill</a>
         </span>
-         <span className={s.Navitens}  onclick="navTo('s2')">
+         <span className={s.Navitens}  onclick="navTo(s2)">
             <i class="fa-solid fa-briefcase"></i>
             <a className={s.navWords}>Products</a>
         </span>
@@ -30,41 +29,44 @@ function App() {
     </nav>
     <main>
 
-        <section id="s1">
+        <section className={s.s1}>
             <h1 className={s.title}>ULTRAKILL</h1>
             <h2>Mankind is DEAD. Blood is FUEL. Hell is FULL.</h2>
-            <a href="https://store.steampowered.com/app/1229490/ULTRAKILL/?l=portuguese"><button  id="site">Play it now on Steam!</button></a>
+
         </section>
 
-        <section id="s2">  
-
-            <div className={s.card}>
-                 <img width="300px" height="auto" src={img1} alt=""/>
-                <div>s
-                    <h4>V1 Plushie</h4>
-                    <p>A little machine, that feeds on blood! It entered hell and killed two kings, lots of hellish creatures, and now it will decor your room!</p>
-                </div>
-            </div>
-
+        <section className={s.s2}> 
             <div className={s.card}>
                 <img width="300px" height="auto" src={img2} alt=""/>
                 <div>
                     <h4>V2 Plushie</h4>
+                    <h5>$29,99</h5>
                     <p>Another little machine, that's red and more durable! It will fight you and will not be reconstructed, and now it will decor your room!</p>
                 </div>
             </div>
 
             <div className={s.card}>
+                 <img width="300px" height="auto" src={img1} alt=""/>
+                <div>
+                    <h4>V1 Plushie</h4>
+                    <h5>$29,99</h5>
+                    <p>A little machine, that feeds on blood! It entered hell and killed two kings, lots of hellish creatures, and now it will decor your room!</p>
+                </div>
+            </div>
+
+
+            <div className={s.card}>
                  <img width="300px" height="auto" src={img3} alt=""/>
                 <div>
                     <h4>Gabriel Plushie</h4>
+                    <h5>$29,99</h5>
                     <p>An archangel, that will cut you down and spread your gore across the stars! His wrath is eternal, and now he will decor your room!</p>
                 </div>
             </div>
 
         </section>
 
-        <section id="s3">
+        <section className={s.s3}>
             
             <iframe className={s.vid} src="https://www.youtube.com/embed/m5ra-w1xct8?si=tWww8qA-H_HfqoMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <iframe className={s.vid} src="https://www.youtube.com/embed/QDYUiCPLtxk?si=uoHRJ2akmnH1ZGEZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -72,7 +74,7 @@ function App() {
         
         </section>
 
-        <section id="s4">
+        <section className={s.s4}>
             <h3>CONTACT</h3>
             <div className={s.formul}>
                 <label for="name">Name:</label>

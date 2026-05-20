@@ -1,3 +1,163 @@
-.nome{
-    color: orange;
+.navWords{
+    color:black;
+}
+.Navitens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 999px;
+}
+.Navitens:hover{
+    cursor: pointer;
+    
+}
+.title{
+    padding-top: 250px;
+}
+.s1{
+    background-image: url(hell.jpeg) ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.s2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.s3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.s4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+.formul{
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px black;
+    color: black;
+    background-color: white;
+    margin-bottom: 8vh;
+}
+.formul input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: 0px 3px 10px black;
+
+}
+.formul label{
+    width: 100%;
+
+
+}
+.formul textarea{
+    max-width: 100%;
+    width: 255px;
+    min-width: 255px;
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 16px;
+    box-shadow: 0px 3px 10px black;
+
+}
+.formul button{
+    width: 100%;
+    padding: 10px;
+    background-color: #d4d4d4;
+}
+
+
+.s2{
+    background-image: url(ultra.jpg)  ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.s3{
+    background-image: url(kill.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.s4{
+    background-image: url(ultrak.jpg) ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.vid{
+    width: 400px;
+    height: 300px;
+}
+.card{
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*opacity: 0;*
+    /*transform: translateY(200px);*/
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    color: black;
+}
+.card.visible{
+    opacity: 1;
+    /*transform: translateY(0);*/
+}
+
+@media(width <= 1000px){
+    .navWords{
+        display: none;
+    }
+    .s1, .s2, .s3{
+        padding: 50px;
+    }
+
+    .vid {
+        width: 400px ;
+        height: 300px;
+    }
+
 }
