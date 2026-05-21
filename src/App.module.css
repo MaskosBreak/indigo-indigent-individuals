@@ -18,7 +18,7 @@
     padding-top: 250px;
 }
 .s1{
-    background-image: url'/hell.jpeg') ;
+    background-image: url('/hell.jpeg') ;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

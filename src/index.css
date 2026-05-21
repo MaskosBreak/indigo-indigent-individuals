@@ -9,11 +9,11 @@
 }
 @font-face {
   font-family: 'ultrakill';
-  src: url('/VCR_OSD_MONO_1.001.ttf') format('truetype');
+  src: url(VCR_OSD_MONO_1.001.ttf) format('truetype');
 }
 @font-face {
     font-family: 'ultratitle';
-    src: url('/BroshKill-Regular.otf') format('otf');
+    src: url(BroshKill-Regular.otf) format('otf');
 }
 *{
     margin: 0;
