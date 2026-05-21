@@ -6,36 +6,46 @@ import img3 from '/03.gif'
 
 
 function App() {
+    const navTo = (id) => {
+  const element = document.getElementById(id);
+
+  if (element) {
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+};
 
   return (
     <>
           <nav>
-        <span className={s.Navitens} onclick="navTo('s1')">
+        <span className={s.Navitens} onClick={() => navTo("s1")}>
             <i class="fa-solid fa-binoculars"></i>
             <a className={s.navWords}>Ultrakill</a>
         </span>
-         <span className={s.Navitens}  onclick="navTo(s2)">
+         <span className={s.Navitens}  onClick={() => navTo("s2")}>
             <i class="fa-solid fa-briefcase"></i>
             <a className={s.navWords}>Products</a>
         </span>
-         <span className={s.Navitens} onclick="navTo('s3')">
+         <span className={s.Navitens} onClick={() => navTo("s3")}>
             <i class="fa-solid fa-compact-disc"></i>
             <a className={s.navWords}>Musics</a>
         </span>
-         <span className={s.Navitens} onclick="navTo('s4')">
+         <span className={s.Navitens} onClick={() => navTo("s4")}>
             <i class="fa-solid fa-headset"></i>
             <a className={s.navWords}>Contact</a>
         </span>
     </nav>
     <main>
 
-        <section className={s.s1}>
+        <section className={s.s1} id='s1'>
             <h1 className={s.title}>ULTRAKILL</h1>
             <h2>Mankind is DEAD. Blood is FUEL. Hell is FULL.</h2>
 
         </section>
 
-        <section className={s.s2}> 
+        <section className={s.s2} id='s2'> 
             <div className={s.card}>
                 <img width="300px" height="auto" src={img2} alt=""/>
                 <div>
@@ -45,7 +55,7 @@ function App() {
                 </div>
             </div>
 
-            <div className={s.card}>
+            <div className={s.card} >
                  <img width="300px" height="auto" src={img1} alt=""/>
                 <div>
                     <h4>V1 Plushie</h4>
@@ -66,7 +76,7 @@ function App() {
 
         </section>
 
-        <section className={s.s3}>
+        <section className={s.s3} id='s3'>
             
             <iframe className={s.vid} src="https://www.youtube.com/embed/m5ra-w1xct8?si=tWww8qA-H_HfqoMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <iframe className={s.vid} src="https://www.youtube.com/embed/QDYUiCPLtxk?si=uoHRJ2akmnH1ZGEZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -74,7 +84,7 @@ function App() {
         
         </section>
 
-        <section className={s.s4}>
+        <section className={s.s4} id='s4'>
             <h3>CONTACT</h3>
             <div className={s.formul}>
                 <label for="name">Name:</label>
